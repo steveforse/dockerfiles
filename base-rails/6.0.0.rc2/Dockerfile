@@ -1,5 +1,5 @@
 # Image: ruby-rails
-FROM base-ruby:2.6.3
+FROM steveforse/base-ruby:2.6.3
 
 ######################
 # RAILS DEPENDENCIES #
@@ -10,7 +10,7 @@ user root
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 
 # System dependencies
-RUN apt-get install -y nodejs libsqlite3-dev postgresql postgresql-contribb libpq-dev
+RUN apt-get update && apt-get install -y nodejs libsqlite3-dev postgresql postgresql-contrib libpq-dev && apt-get clean
 
 #################
 # INSTALL RAILS #
