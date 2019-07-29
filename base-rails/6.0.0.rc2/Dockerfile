@@ -1,4 +1,4 @@
-# Image: ruby-rails
+# Image: base-rails
 FROM steveforse/base-ruby:2.6.3
 
 ######################

@@ -1,6 +1,6 @@
 # Image: ruby-base
 
-FROM debian:9.8
+FROM steveforse/base-debian:10.0
 
 # Install Ruby dependencies
 USER root
