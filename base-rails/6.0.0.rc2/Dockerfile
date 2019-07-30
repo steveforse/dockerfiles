@@ -18,8 +18,13 @@ RUN apt-get update && \
                     postgresql \
                     postgresql-contrib \
                     libpq-dev \
+                    nginx \
                     && \
     apt-get clean
+
+# Configure sudo for ruby user
+RUN adduser ruby-user sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 #################
 # INSTALL RAILS #
