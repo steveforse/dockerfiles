@@ -14,7 +14,7 @@ RUN apt-get install -y autoconf \
                        zlib1g-dev \
                        libncurses5-dev \
                        libffi-dev \
-                       libgdbm3 \
+                       libgdbm6 \
                        libgdbm-dev
 
 
